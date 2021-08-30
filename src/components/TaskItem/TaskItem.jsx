@@ -1,5 +1,5 @@
 import React from 'react'
-import { FiTrash2 } from 'react-icons/fi';
+import { FaTrashAlt } from 'react-icons/fa';
 import './TaskItem.css'
 
 const TaskItem = ({ task, deleteTask, handleChangeStatus }) => (
@@ -7,7 +7,7 @@ const TaskItem = ({ task, deleteTask, handleChangeStatus }) => (
         <li className="TaskItem">
             <input onChange={() => handleChangeStatus(task.id)} type="checkbox" checked={task.status} />
             <h2>{task.title}</h2>
-            <button onClick={() => deleteTask(task.id)}><FiTrash2 /></button>
+            <button onClick={() => deleteTask(task.id)}><FaTrashAlt /></button>
         </li>
     </div>
 );
